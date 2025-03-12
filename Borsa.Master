@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Borsa.master.cs" Inherits="webBorsaNew.Borsa" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Sablon.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="genel">
+        <div id="baslik">
+            <div class="logo">
+                <asp:Image ID="Image1" runat="server" Height="122px" ImageUrl="~/images/images/images.png" Width="122px" />
+            </div>
+            <div class="slogan">
+                <marquee align="middle" scrollamount="1" height="90" width="100%" direction="up"scrolldelay="1">
+                    <h1>BORSADAKİ LİDER PLATFORM</h1>
+                    <br />
+                    <h1>BORSADAKİ GÖZÜNÜZ KULAĞINIZ</h1></marquee>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=100009087408871&sk=about" target=new><img src="images/images/facebook4.png" border="0" style="height: 37px; margin-left: 146px;"></a>
+            <a href="http://twitter.com/https://twitter.com/gB_Borsa" target=new><img src="http://in.sitekodlari.com/tw/15.png" border="0"></a>
+            <div class="uyegirisi">
+                <img src="images/images/UYEOL.png" width="30" height="30"  />
+                <a href="UyeGirisi.aspx"><font face="Verdana"  color="white">ÜYE GİRİŞİ</font></a>
+                <img src="images/images/uyegirisicon.png" width="30" height="30"  />
+                <a href="UyeOl.aspx"><font face="Verdana" color="white">ÜYE OL</font></a>
+                
+                    </div>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <div id="menu">
+               <ul>
+                    <li><a href="Anasayfa.aspx">Anasayfa</a></li>
+                        <li><a href="#">Piyasalar</a>
+                   <ul>
+                       <br />
+    <li><a href="doviz.aspx">Döviz</a></li>
+	<li><a href="Altın.aspx">Altın</a></li>
+	<li><a href="Benzin.aspx">Benzin</a></li>
+  </ul> 
+                            </li> 
+                        <li><a href="EkonomiFinans.aspx">Ekonomi/Finans</a>
+                   <ul>
+                       <br />
+    <li><a href="#">Güncel Ekonomi Haberleri</a></li>
+	<li><a href="#">Yazarlar</a></li>
+  </ul>  
+                            </li>
+                        <li><a href="BorsaSozluk.aspx">Borsa Sözlüğü</a></li>
+                        <li><a href="Forex.aspx">Forex</a></li>
+                        <li><a href="Uyeler.aspx">Üyeler</a>
+                   <ul>
+                       <br />
+    <li><a href="#">Kurumsal</a></li>
+	<li><a href="#">Kişisel</a></li>
+  </ul> 
+                            </li> 
+                    </ul>
+            <div class="clear"></div>
+            
+            </div>
+        <div class="icerik">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         
+            </div>
+
+        <div class="iletisim">İLETİŞİM : Barbaros Mh. Çiğdem Sk. Ağaoğlu My Office İş Merkezi No:1 K:3 17/B2 Nişantaşı - İstanbul Tel: 0216 912 01 84 Fax: 0216 912 01 85 reklam@gbborsa.com</div>
+
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,283 @@
+﻿
+body {
+    background:url(http://www.taylorsappliance.us/Images/body_bg.jpg) repeat-x;
+    margin:0;
+    padding:0;
+}
+.anasayfacontent {
+     margin:0 auto;
+     width:630px;
+   height:auto;
+
+}
+#genel {
+    width:auto;
+    height:auto;
+    margin:0 auto;
+}
+#baslik {
+     background:url(http://www.tibetrestaurant.com/images/body_bg.jpg) repeat-x;
+    
+}
+.logo {
+    width:80px;
+    height:80px;
+    float:left;
+    margin:20px;
+    
+}
+.isim {
+    float:left;
+    margin-left:10px;
+    /*width:auto;
+    height:auto;*/
+    font-family:'Lucida Handwriting';
+    color:white;
+    text-decoration:underline;
+    font-size:12px;
+    
+    
+    
+}
+.slogan {
+    float:left;
+    margin-left:318px;
+    /*width:auto;
+    height:auto;*/
+    font-family:'Lucida Handwriting';
+    color:white;
+    text-decoration:underline;
+    font-size:12px;
+    top:200px;
+    
+}
+.uyegirisi {
+    float:left;
+    margin-left:810px;
+    width:auto;
+    height:auto;
+    padding:10px 10px 10px 10px;
+    font-size:small;
+}
+   
+#menu {
+      margin:0 auto;
+     text-align: left;
+     background:url(http://www.tibetrestaurant.com/images/body_bg.jpg) repeat-x;
+     text-align:center;
+      width:900px;
+     height:auto;
+     
+}
+  #menu ul {
+    list-style:none;
+	margin:0px; padding:0px; }
+  #menu li {
+    float:left; position:relative; width:150px;
+    top: 0px;
+    left: 0px;
+}
+  #menu li ul {
+    display:none; left:auto; position:absolute; top:21px; }
+  #menu ul li a{
+    background:url(http://www.tibetrestaurant.com/images/body_bg.jpg) repeat-x;
+    border-color:#CCCCCC #888888 #555555 #BBBBBB;
+    border-style:solid;
+    color:#000;
+    display:block;
+    font:bold 12px Verdana , Helvetica, Sans-serif;
+    margin:0px;
+    padding:7px 7px 7px 7px;
+    text-decoration:none;
+    line-height:16px;
+    text-transform:uppercase;
+    color:white;
+    text-align:center;
+  }
+  #menu ul li a:hover {
+    background-color:#FFF; color:#FF0000; }
+  #menu li:hover ul { display:block; }
+.iletisim {
+       width:900px;
+       height:auto;
+       min-height:45px;
+       margin:100px  auto  0 auto;
+       background:url(http://www.tibetrestaurant.com/images/body_bg.jpg) repeat-x;
+       font:bold 12px Arial, Helvetica, Sans-serif;
+       color:white;
+       text-align:center;
+}
+.clear {
+    clear:both;
+}
+.slider {
+    z-index:-1;
+    margin: 0 auto;
+    width: 630px;
+    height: 380px;
+    overflow: hidden;
+    position:relative;
+    
+}
+.resim1, .resim2, .resim3, .resim4, .resim5
+{
+  position: absolute;
+  width:630px;
+  height:380px;
+}
+ 
+.resim1{left: 0;}
+.resim2{left: 630px;}
+.resim3{left: 1260px;}
+.resim4{left: 1890px;}
+.resim5{left: 2520px;}
+
+.slider > div
+{
+  width: 2500px;
+  height: 380px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: gecisler;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: gecisler;
+  -ms-animation-duration: 20s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: gecisler;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+  animation-name: gecisler;
+}
+.slider > div  img{
+  opacity: 0.9;
+  filter: alpha(opacity=95);
+}
+ 
+.slider > div  img:hover{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+    .slider > div:hover {
+        -webkit-animation-play-state: paused;
+    }
+
+    @-webkit-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-630px;}
+  30% {left:-630px;}
+  40% {left:-1260px;}
+  50% {left:-1260px;}
+  60% {left:-1890px;}
+  70% {left:-1890px;}
+  80% {left:-2520px;}
+  90% {left:-2520px;}
+}
+@-moz-keyframes gecisler
+{
+ 0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-630px;}
+  30% {left:-630px;}
+  40% {left:-1260px;}
+  50% {left:-1260px;}
+  60% {left:-1890px;}
+  70% {left:-1890px;}
+  80% {left:-2520px;}
+  90% {left:-2520px;}
+}
+@-ms-keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-630px;}
+  30% {left:-630px;}
+  40% {left:-1260px;}
+  50% {left:-1260px;}
+  60% {left:-1890px;}
+  70% {left:-1890px;}
+  80% {left:-2520px;}
+  90% {left:-2520px;}
+}
+@keyframes gecisler
+{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:-630px;}
+  30% {left:-630px;}
+  40% {left:-1260px;}
+  50% {left:-1260px;}
+  60% {left:-1890px;}
+  70% {left:-1890px;}
+  80% {left:-2520px;}
+  90% {left:-2520px;}
+}
+.border { 
+    border-bottom:3px solid #CCCCCC;
+}
+.forex {
+    width:630px;
+    height:380px;
+    margin:0 auto;
+    background:url(images/images/gcm.jpg) no-repeat top left ;
+    background-size:100%;
+}
+.benzin {
+    width:630px;
+    height:395px;
+    margin:0 auto;
+    background-size:100%;
+}
+.altın {
+    float:left;
+    width: 630px;
+    height: 652px;
+    margin: 0px;
+    background-size: 100%;
+}
+    .altıngunluk {
+    
+    
+    width:400px;
+    height:400px;
+    margin:700px;
+    background-size:100%;
+}
+.doviz {
+    width:630px;
+    height:2751px;
+    margin:40px auto 0 auto;
+    background-size:100%;
+}
+.borsaa {
+    width:630px;
+    height:380px;
+    margin:0 auto;
+}
+h3 {
+    height:auto;
+    width:auto;
+    text-align:center;
+    margin-top:30px;
+}
+    h3 a {
+        color:red;
+        text-decoration:none;
+    }
+    h3 a:hover {
+        
+        text-decoration:underline;
+    }
+
+
+
+
+
+
+
+
